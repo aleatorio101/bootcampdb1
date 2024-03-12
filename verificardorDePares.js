@@ -1,16 +1,9 @@
-function encontrarPares(array) {
-    var numerosPares = [];
-
-    for (var i = 0; i < array.length; i++) {
-        if (array[i] % 2 === 0) {
-            numerosPares.push(array[i]);
-        }
-    }
-
-    return numerosPares;
+const encontrarPares = (array) => {
+    return array.filter(num => num % 2 === 0);
 }
 
 // Exemplo de uso
-var numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-var pares = encontrarPares(numeros);
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const pares = encontrarPares(numeros);
 console.log("Números pares:", pares);
+
